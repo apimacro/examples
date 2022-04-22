@@ -14,11 +14,12 @@ Examples of usage the apimacro's
 
 Install from repo: https://github.com/apimacro/bash.git
 ```bash
-./apimacro
+./install.sh
 ```
+
 Update works such git pull for bash repo: https://github.com/apimacro/bash.git
 ```bash
-./apimacro
+./update.sh
 ```
 
 ## Start using apiMacro 
@@ -51,11 +52,47 @@ files structure
 ...        
 ```
 
-## Example
+## Example no 1
 
 Example with url and command: http_status_code
 executed in path: '/bash/apimacro/http_status_code.sh' 
 through script: ./apimacro 
+
+1/in.csv
+```csv
+url,                    http_status_code
+https://softreck.com
+https://softreck.pl
+https://sapletta.com
+https://sapletta.pl
+```
+
+
+After running macro for project no: 1
+will be generated 1/out.csv file with outputs data
+```bash
+./apimacro 1
+```
+
+
+Generated output data through running script: http_status_code.sh with each data record: url
+in second column are result of bash script: http_status_code
+
+1/out.csv
+```csv
+url,                    http_status_code
+https://softreck.com,   200
+https://softreck.pl,    200
+https://sapletta.com,   200
+https://sapletta.pl,    200
+```
+
+
+## Example no 2
+
+Example with url and command: http_status_code
+executed in path: '/bash/apimacro/http_status_code.sh'
+through script: ./apimacro
 
 1/in.csv
 ```csv
