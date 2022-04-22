@@ -80,3 +80,5 @@ https://sapletta.pl,    200
 ---
 
 + [edit](https://github.com/apimacro/examples/edit/main/README.md)
+
++ [apimacro/examples](https://github.com/apimacro/examples)
