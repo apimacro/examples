@@ -10,6 +10,19 @@
 
 Examples of usage the apimacro's
 
+## Install
+
+Install from repo: https://github.com/apimacro/bash.git
+```bash
+./apimacro
+```
+Update works such git pull for bash repo: https://github.com/apimacro/bash.git
+```bash
+./apimacro
+```
+
+## Start using apiMacro 
+
 List of projects
 ```bash
 ./apimacro
