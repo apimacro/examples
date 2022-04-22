@@ -1,4 +1,7 @@
-# examples
+![3/cover.png](http://logo.apimacro.com/3/cover.png)
+
+# [examples.apimacro.com](https://examples.apimacro.com/)
+
 Examples of usage the apimacro's
 
 List of projects
