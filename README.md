@@ -38,6 +38,44 @@ The same, with separated details, run macro for 1/in.csv
 ./apimacro "1/in.csv" "1/out.csv" "1/status.csv"
 ```
 
+## Projects
+
+files structure
+```
+1
+    in.csv
+    out.csv
+2
+    in.csv
+    out.csv
+...        
+```
+
+## Example
+
+Example with url and command: http_status_code
+executed in '/bash/apimacro/http_status_code.sh' trough ./apimacro script
+
+1/in.csv
+```csv
+url,                    http_status_code
+https://softreck.com
+https://softreck.pl
+https://sapletta.com
+https://sapletta.pl
+```
+
+generated file through checking each url from 1/in.csv
+
+1/out.csv
+```csv
+url,                    http_status_code
+https://softreck.com,   200
+https://softreck.pl,    200
+https://sapletta.com,   200
+https://sapletta.pl,    200
+```
+
 
 ---
 
