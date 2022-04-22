@@ -54,7 +54,8 @@ files structure
 ## Example
 
 Example with url and command: http_status_code
-executed in '/bash/apimacro/http_status_code.sh' trough ./apimacro script
+executed in path: '/bash/apimacro/http_status_code.sh' 
+through script: ./apimacro 
 
 1/in.csv
 ```csv
@@ -65,7 +66,16 @@ https://sapletta.com
 https://sapletta.pl
 ```
 
-generated file through checking each url from 1/in.csv
+
+After running macro for project no: 1
+will be generated 1/out.csv file with outputs data
+```bash
+./apimacro 1
+```
+
+
+Generated output data through running script: http_status_code.sh with each data record: url
+in second column are result of bash script: http_status_code
 
 1/out.csv
 ```csv
