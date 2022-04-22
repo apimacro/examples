@@ -91,36 +91,36 @@ https://sapletta.pl,    200
 ## Example no 2
 
 Example with url and command: http_status_code
-executed in path: '/bash/apimacro/http_status_code.sh'
+executed in path: '/bash/apimacro/ping.sh'
 through script: ./apimacro
 
-1/in.csv
+2/in.csv
 ```csv
-url,                    http_status_code
-https://softreck.com
-https://softreck.pl
-https://sapletta.com
-https://sapletta.pl
+host,                    ping
+softreck.com
+softreck.pl
+127.0.0.1
+localhost
 ```
 
 
 After running macro for project no: 1
-will be generated 1/out.csv file with outputs data
+will be generated 2/out.csv file with outputs data
 ```bash
-./apimacro 1
+./apimacro 2
 ```
 
 
-Generated output data through running script: http_status_code.sh with each data record: url
-in second column are result of bash script: http_status_code
+Generated output data through running script: ping.sh with each data record: url
+in second column are result of bash script: ping
 
-1/out.csv
+2/out.csv
 ```csv
-url,                    http_status_code
-https://softreck.com,   200
-https://softreck.pl,    200
-https://sapletta.com,   200
-https://sapletta.pl,    200
+host,           ping
+softreck.com,   PING softreck.com (212.227.10.167) 56(124) bytes of data. --- softreck.com ping statistics...
+softreck.pl,    PING softreck.pl (212.227.10.167) 56(124) bytes of data. --- softreck.pl ping statistics...
+127.0.0.1,      PING 127.0.0.1 (127.0.0.1) 56(124) bytes of data. --- 127.0.0.1 ping statistics --- ...
+localhost,      $
 ```
 
 
