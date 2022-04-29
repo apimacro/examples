@@ -49,8 +49,8 @@ files structure
 2
     in.csv
     out.csv
-...        
-```
+```        
+
 
 ## Example no 1
 
@@ -70,6 +70,7 @@ https://sapletta.pl
 
 After running macro for project no: 1
 will be generated 1/out.csv file with outputs data
+
 ```bash
 ./apimacro 1
 ```
@@ -79,6 +80,7 @@ Generated output data through running script: http_status_code.sh with each data
 in second column are result of bash script: http_status_code
 
 1/out.csv
+
 ```csv
 url,                    http_status_code
 https://softreck.com,   200
@@ -95,6 +97,7 @@ executed in path: '/bash/apimacro/ping.sh'
 through script: ./apimacro
 
 2/in.csv
+
 ```csv
 host,                    ping
 softreck.com
@@ -106,6 +109,7 @@ localhost
 
 After running macro for project no: 1
 will be generated 2/out.csv file with outputs data
+
 ```bash
 ./apimacro 2
 ```
@@ -125,7 +129,6 @@ localhost,      $
 
 
 ---
-
+You can use the to maintain and preview the content for your website in Markdown files:
 + [edit](https://github.com/apimacro/examples/edit/main/README.md)
-
 + [apimacro/examples](https://github.com/apimacro/examples)
